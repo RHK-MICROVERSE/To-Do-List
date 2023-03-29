@@ -48,7 +48,7 @@
 Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
 
 <p align="center">
-  <img src="./images/first_apperance.png" alt="Basic UI" width="300px" />
+  <img src="./images/first-apperance.png" alt="Basic UI" width="300px" />
 </p>
 
 Once have the code working, will play with refactoring it. In this step will also need to adhere to the layout presented in the wireframe, but i will choose the application's styling. So i initial ugly HTML will turn into better with higher
