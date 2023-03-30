@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <img src="./images/RHK Trading Logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/images/RHK Trading Logo.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>To do List Project</b></h3>
 </div>
