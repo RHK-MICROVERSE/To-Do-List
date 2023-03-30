@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./index.js" type="module"></script>
+  <link rel="stylesheet" href="./index.css">
   <title>To Do List</title>
 </head>
+
 <body>
-  <main>
-    <div class="master-container">
-      <h1 class="main-title">Today's To Do</h1>
-      <hr class="line">
-      <form class="form-list" action="" id="job">
-        <input type="text" name="job" class="jobInput" placeholder="Add to your list">
-      </form>
-      <div class="displayjobs">
-      </div>
-      <div class="clear-btn">
-        <button type="submit" class="clear-job" id="clear-job-btn">
-          Clear All Completed
+  <div class="mother-container">
+    <ul class="main-container">
+      <li class="title">
+        <h4>Today's To Do</h4>
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </li>
+      <li class="form-input">
+        <input type="text" id="idiot" class="user-imput" placeholder="Add to your list...">
+        <i class="fa-solid fa-turn-down"></i>
+      </li>
+      
+      <ul id="addtodotasks">
+      </ul>
+      <li class="btn-li">
+        <button>
+          Clear all completed
         </button>
-      </div>
-    </div>
-  </main>
+      </li>
+    </ul>
+  </div>;
 </body>
+
 </html>
+
+

@@ -45,6 +45,9 @@
 - 2: Shows list of tasks to be done (plain JS with classes) and add basic CSS.
 - 3: Create a complete List of tasks to be done and update it.
 
+**New Features add**
+- CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
+
 Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
 
 <p align="center">
