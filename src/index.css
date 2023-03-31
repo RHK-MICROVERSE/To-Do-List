@@ -66,6 +66,10 @@
   color: rgb(128, 135, 135);
 }
 
+.overlined {
+  text-decoration: line-through;
+}
+
 .title {
   margin: 2vw 1vw 2vw 0;
   padding-bottom: 2vw;
@@ -121,7 +125,7 @@
   align-items: center;
 }
 
-.btn-li {
+#btn-li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +143,7 @@ button {
 
 button:hover {
   background: goldenrod;
+  transition: 0.7s;
 }
 
 .main-container li button {
@@ -147,4 +152,14 @@ button:hover {
   border: none;
   color: white;
   font-weight: 600;
+}
+
+.button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+}
+
+.button:active {
+  background-color: green;
 }

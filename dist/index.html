@@ -9,24 +9,24 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./index.js" type="module"></script>
-  <link rel="stylesheet" href="./index.css">
   <title>To Do List</title>
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 
 <body>
-  <div class="mother-Container">
+  <div class="mother-container">
     <ul class="main-container">
-      <li>
+      <li class="title">
         <h4>Today's To Do</h4>
         <i class="fa-solid fa-arrows-rotate"></i>
       </li>
-      <li><input type="text" class="user-imput" placeholder="Add to your list...">
-          <i class="fa-solid fa-turn-down-left"></i>
+      <li class="form-input">
+        <input type="text" id="idiot" class="user-imput" placeholder="Add to your list...">
+        <i class="fa-solid fa-turn-down"></i>
       </li>
       <ul id="addtodotasks">
       </ul>
-      <li class="btn-li">
-        <button>
+      <li id="btn-li">
+        <button class="clear-all-complete" id="clear-btn">
           Clear all completed
         </button>
       </li>
