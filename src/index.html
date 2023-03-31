@@ -9,7 +9,6 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./index.js" type="module"></script>
-  <link rel="stylesheet" href="./index.css">
   <title>To Do List</title>
 </head>
 
@@ -24,11 +23,10 @@
         <input type="text" id="idiot" class="user-imput" placeholder="Add to your list...">
         <i class="fa-solid fa-turn-down"></i>
       </li>
-      
       <ul id="addtodotasks">
       </ul>
-      <li class="btn-li">
-        <button>
+      <li id="btn-li">
+        <button class="clear-all-complete" id="clear-btn">
           Clear all completed
         </button>
       </li>

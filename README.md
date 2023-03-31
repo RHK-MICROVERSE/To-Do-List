@@ -48,6 +48,8 @@
 **New Features add**
 - CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
 
+-  Functionality to application to make it interactive.
+
 Will start by building the core functionalities and ignoring how the website looks. At the very beginning the website will look similar to the UI below. Note that it is plain HTML with no styling, but it will allow to add and remove books from the list!
 
 <p align="center">

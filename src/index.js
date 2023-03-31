@@ -1,5 +1,6 @@
 import addTask, { removeTask } from './modules/addAndRemove.js';
 import './index.css';
+import DeleteAll from './modules/markCompletion.js';
 
 // Creating Rendering class
 const displayContainer = document.getElementById('addtodotasks');
@@ -8,15 +9,15 @@ const tasksList = JSON.parse(localStorage.getItem('list')) || [];
 const DisplayTask = () => {
   tasksList.forEach((list, index) => {
     displayContainer.innerHTML += `
-        <li class="li-list" >
-          <input class="li-list" type="checkbox" data-com="${list.completed}">
-          <p contenteditable="true" class="paragraph" data-para="${index}">
-            ${list.description}
-          </p>
-          <i class="fa-regular fa-trash-can" data-index="${index}"></i>
-          <i class="li-list fa-solid fa-ellipsis-vertical"></i>
-        </li>
-        `;// eslint-disable-line no-return-assign
+      <li class="li-list" >
+        <input class="li-check" id="trfa" type="checkbox" ${list.completed ? 'checked' : ''} data-id="${index}" data-com="${list.completed}">
+        <p contenteditable="true" class="paragraph" data-para="${index}">
+          ${list.description}
+        </p>
+        <i class="fa-regular fa-trash-can" data-index="${index}"></i>
+        <i class="li-list fa-solid fa-ellipsis-vertical"></i>
+      </li>
+      `;// eslint-disable-line no-return-assign
   });
 };
 
@@ -70,8 +71,27 @@ listItemsContainer.addEventListener('keypress', (e) => {
       }
       const num = e.target.getAttribute('data-para');
       tasksList[num].description = e.target.textContent;
-      window.location.reload();
     }
   }
   return localStorage.setItem('list', JSON.stringify(tasksList));
 });
+
+const tickmarked = document.querySelectorAll('.li-check');
+tickmarked.forEach((list) => {
+  list.addEventListener('change', (e) => {
+    if (e.currentTarget.checked === true) {
+      list.nextElementSibling.classList.add('overlined');
+      const idnx = e.currentTarget.getAttribute('data-id');
+      tasksList[idnx].completed = true;
+    } else {
+      list.nextElementSibling.classList.remove('overlined');
+      const idnx = e.currentTarget.getAttribute('data-id');
+      tasksList[idnx].completed = false;
+    }
+    localStorage.setItem('list', JSON.stringify(tasksList));
+    window.location.reload();
+  });
+});
+
+const deleteBtn = document.getElementById('clear-btn');
+deleteBtn.addEventListener('click', DeleteAll);
