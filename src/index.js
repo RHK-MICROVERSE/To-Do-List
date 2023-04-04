@@ -11,7 +11,7 @@ const DisplayTask = () => {
     displayContainer.innerHTML += `
       <li class="li-list" >
         <input class="li-check" id="trfa" type="checkbox" ${list.completed ? 'checked' : ''} data-id="${index}" data-com="${list.completed}">
-        <p contenteditable="true" class="paragraph" data-para="${index}">
+        <p contenteditable="true" class="paragraph ${list.completed ? 'overlined' : ''}"  data-para="${index}">
           ${list.description}
         </p>
         <i class="fa-regular fa-trash-can" data-index="${index}"></i>
@@ -79,16 +79,15 @@ listItemsContainer.addEventListener('keypress', (e) => {
 const tickmarked = document.querySelectorAll('.li-check');
 tickmarked.forEach((list) => {
   list.addEventListener('change', (e) => {
+    const data = JSON.parse(localStorage.getItem('list'));
     if (e.currentTarget.checked === true) {
-      list.nextElementSibling.classList.add('overlined');
       const idnx = e.currentTarget.getAttribute('data-id');
-      tasksList[idnx].completed = true;
+      data[idnx].completed = true;
     } else {
-      list.nextElementSibling.classList.remove('overlined');
       const idnx = e.currentTarget.getAttribute('data-id');
-      tasksList[idnx].completed = false;
+      data[idnx].completed = false;
     }
-    localStorage.setItem('list', JSON.stringify(tasksList));
+    localStorage.setItem('list', JSON.stringify(data));
     window.location.reload();
   });
 });
