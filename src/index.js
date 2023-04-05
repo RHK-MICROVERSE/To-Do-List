@@ -4,7 +4,7 @@ import DeleteAll from './modules/markCompletion.js';
 
 // Creating Rendering class
 const displayContainer = document.getElementById('addtodotasks');
-const input = document.querySelector('.user-imput');
+const input = document.querySelector('.user-input');
 const tasksList = JSON.parse(localStorage.getItem('list')) || [];
 const DisplayTask = () => {
   tasksList.forEach((list, index) => {
@@ -27,6 +27,15 @@ input.addEventListener('keypress', (e) => {
     addTask();
     window.location.reload();
   }
+});
+
+document.querySelector('.fa-turn-down').addEventListener('click', () => {
+  addTask();
+  window.location.reload();
+});
+
+document.querySelector('.fa-arrows-rotate').addEventListener('click', () => {
+  window.location.reload();
 });
 
 // Creating the list of Task from the Display

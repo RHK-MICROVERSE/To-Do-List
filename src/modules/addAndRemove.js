@@ -1,5 +1,5 @@
 const tasksList = JSON.parse(localStorage.getItem('list')) || [];
-const input = document.querySelector('.user-imput');
+const input = document.querySelector('.user-input');
 const addTask = () => {
   const create = {
     description: input.value,
