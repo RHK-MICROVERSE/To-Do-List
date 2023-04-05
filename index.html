@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./index.js" type="module"></script>
+  <title>To Do List</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
+<body>
+  <div class="mother-container">
+    <ul class="main-container">
+      <li class="title">
+        <h4>Today's To Do</h4>
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </li>
+      <li class="form-input">
+        <input type="text" id="idiot" class="user-imput" placeholder="Add to your list...">
+        <i class="fa-solid fa-turn-down"></i>
+      </li>
+      <ul id="addtodotasks">
+      </ul>
+      <li id="btn-li">
+        <button class="clear-all-complete" id="clear-btn">
+          Clear all completed
+        </button>
+      </li>
+    </ul>
+  </div>;
+</body>
+
+</html>
+
+
