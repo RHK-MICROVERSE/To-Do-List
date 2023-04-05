@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/RHK-MICROVERSE/To-Do-List/issues"
   },
-  "homepage": "https://github.com/RHK-MICROVERSE/To-Do-List",
+  "homepage": "https://RHK-MICROVERSE.github.io/To-Do-List",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
