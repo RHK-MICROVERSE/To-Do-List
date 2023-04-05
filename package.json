@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/RHK-MICROVERSE/To-Do-List/issues"
   },
-  "homepage": "https://github.com/RHK-MICROVERSE/To-Do-List#readme",
+  "homepage": "https://github.com/RHK-MICROVERSE/To-Do-List",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
@@ -37,6 +38,7 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "lodash": "^4.17.21"
   }
 }
