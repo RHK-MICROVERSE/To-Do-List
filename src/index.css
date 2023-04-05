@@ -10,17 +10,16 @@
   width: 100%;
   max-width: 480px;
   margin: 10rem auto auto;
-  background-color: white;
   box-shadow: 0 0.25rem 0.85rem 0.125rem rgba(0, 0, 0, 0.15);
   border-radius: 0.3rem;
   gap: 0;
   align-items: center;
   text-align: left;
   min-height: 50%;
+  background-color: rgb(111, 222, 247);
 }
 
 .main-container {
-  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,7 +36,8 @@
   padding: 0 20px;
   height: 16%;
   width: 100%;
-  border-bottom: 1px solid rgb(202, 192, 192);
+  border-bottom: 1px solid black;
+  margin-bottom: 0;
 }
 
 .main-container li input[type="text"] {
@@ -64,6 +64,7 @@
 
 .main-container li i {
   color: rgb(128, 135, 135);
+  cursor: pointer;
 }
 
 .overlined {
@@ -71,7 +72,7 @@
 }
 
 .title {
-  margin: 2vw 1vw 2vw 0;
+  margin: 0 1vw 2vw 0;
   padding-bottom: 2vw;
 }
 
@@ -80,12 +81,13 @@
   font-size: 22px;
 }
 
-#idiot {
+#input-user {
   border: none;
   width: 300px;
   margin: 10px;
-  padding: 5px 0;
+  padding: 10px 0;
   font-style: italic;
+  padding-left: 10px;
 }
 
 #addtodotasks {
@@ -162,4 +164,8 @@ button:hover {
 
 .button:active {
   background-color: green;
+}
+
+.fa-turn-down:hover {
+  cursor: pointer;
 }
